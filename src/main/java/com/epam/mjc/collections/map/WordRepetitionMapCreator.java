@@ -10,7 +10,7 @@ public class WordRepetitionMapCreator {
         String s = w.toLowerCase();
         String[] words = s.split("\\W");
 
-        for (int i = 0; i < words.length - 1; i++) {
+        for (int i = 0; i < words.length; i++) {
             int q = 1;
             for (int j = 1; j < words.length; j++) {
 
