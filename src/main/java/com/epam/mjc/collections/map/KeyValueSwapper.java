@@ -1,5 +1,8 @@
 package com.epam.mjc.collections.map;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class KeyValueSwapper {
@@ -7,7 +10,7 @@ public class KeyValueSwapper {
             Map<Integer, String> newSourceMap = new HashMap<>(sourceMap); //создаем копию sourceMap
         HashMap<String, Integer> rev = new HashMap<>(); //создаем новый перевернутый map
 
-        List<String> s = new LinkedList<>(sourceMap.values()); //запопляем List значениями из sourceMap
+        List<String> s = new ArrayList<>(sourceMap.values()); //запопляем List значениями из sourceMap
         String a = "";
         int z = 0;
 
